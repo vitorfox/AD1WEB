@@ -1,0 +1,18 @@
+header	{ display:block; margin-bottom: 15px;		}
+nav		{ display:block; width: 240px; float: left;	}
+section	{ display:block; float: right;				}
+footer	{ clear: both;								}
+body    { background-color: #FADADA; color: #880088; font-size: 16px; font-family: Verdana, "Liberation";}
+a:link {color: #EE0000;}
+a:visited {color: #880088;}
+a {	text-decoration:none;}
+ul.menu {color: #EE0000; list-style-type: disc; width: 120px; padding-top: 15px; border-top: 2px; border-top-style: solid;
+		padding-bottom: 15px; border-bottom: 2px; border-bottom-style: solid;}
+
+.ender { text-align: center; font-size: 13px; padding-top: 15px; border-top: 3px; border-top-style: solid; font-style: italic;}
+
+.textoNormal {text-align: justify;}
+
+.apres {text-align: center;}
+
+img.imgLogo {border-bottom: 3px; border-bottom-style: solid;}
