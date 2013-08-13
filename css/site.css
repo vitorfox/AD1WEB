@@ -1,4 +1,4 @@
-header	{ display:block; margin-bottom: 15px;		}
+header	{ display:block; margin-bottom: 15px; float:left;		}
 nav		{ display:block; width: 240px; float: left;	}
 section	{ display:block; float: right;				}
 footer	{ clear: both;								}
@@ -14,5 +14,7 @@ ul.menu {color: #EE0000; list-style-type: disc; width: 120px; padding-top: 15px;
 .textoNormal {text-align: justify;}
 
 .apres {text-align: center;}
+
+.ptopbottom {padding-top: 20px; padding-bottom: 20px;}
 
 img.imgLogo {border-bottom: 3px; border-bottom-style: solid;}
