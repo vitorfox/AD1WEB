@@ -16,5 +16,12 @@ ul.menu {color: #EE0000; list-style-type: disc; width: 120px; padding-top: 15px;
 .apres {text-align: center;}
 
 .ptopbottom {padding-top: 20px; padding-bottom: 20px;}
+.marginBottom {margin-bottom: 50px;}
 
 img.imgLogo {border-bottom: 3px; border-bottom-style: solid;}
+
+.quadro {background-color: #FFFFFF; width: 250px; float: right; border: 1px; border-style: solid; padding-bottom: 10px; margin-bottom: 20px;}
+
+li.cursos {list-style-type: circle;}
+li.faixaetaria {list-style-type: square;}
+li.toppad {padding-top: 15px;}
