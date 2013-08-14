@@ -25,3 +25,12 @@ img.imgLogo {border-bottom: 3px; border-bottom-style: solid;}
 li.cursos {list-style-type: circle;}
 li.faixaetaria {list-style-type: square;}
 li.toppad {padding-top: 15px;}
+
+.tabCursos {
+	border: 1px; border-style: solid; border-collapse: separate; width: 600px; margin-bottom: 10px;
+} 
+.tabCursos td.tabImg {width: 100px; }
+.tabCursos th {border:1px; border-style: solid; padding: 10px;}
+.tabCursos td {background-color: #FFFFFF; border:1px; border-style: solid;}
+.tabTitulo {background-color: #600060; color: #FFFF00;}
+.tabSubTit {background-color: #B000B0; color: #FFFFFF;}
