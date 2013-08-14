@@ -29,8 +29,19 @@ li.toppad {padding-top: 15px;}
 .tabCursos {
 	border: 1px; border-style: solid; border-collapse: separate; width: 600px; margin-bottom: 10px;
 } 
-.tabCursos td.tabImg {width: 100px; }
+
 .tabCursos th {border:1px; border-style: solid; padding: 10px;}
-.tabCursos td {background-color: #FFFFFF; border:1px; border-style: solid;}
+.tabCursos td {background-color: #FFFFFF; border:1px; border-style: solid; padding: 10px;}
+.tabCursos td.tabImg {width: 100px; background-color: transparent;}
+.tabCursos td.tabImg img {vertical-align: middle; padding-left: 10px; padding-right: 10px;}
 .tabTitulo {background-color: #600060; color: #FFFF00;}
 .tabSubTit {background-color: #B000B0; color: #FFFFFF;}
+.texto.ballet:after {
+	content: "O ballet clássico é uma atividade física que serve como base para as mais diversas danças; propicia a conscientização corporal; proporciona equilíbrio entre corpo e mente e aumenta a auto-estima e a auto-confiança.";
+}
+.texto.jazz:after {
+	content: "O Jazz é um estilo de dança essencialmente popular para as crianças e adolescentes, ajuda a desenvolver o espírito de equipe e formação da auto-estima. Para o físico, aumenta a capacidade cardiorespiratória, tonifica os músculos e corrige a postura.";
+}
+.texto.sapateado:after {
+	content: "apateado é uma arte visual e sonora. É um misto de ritmo, som, técnica, movimento e estilo. É uma dança alegre que libera o prazer de seus praticantes e faz os pés cantarem. Este estilo de dança desenvolve a percepção musical e melhora a coordenação motora.";
+}
