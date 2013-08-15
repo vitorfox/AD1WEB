@@ -1,6 +1,86 @@
+<!DOCTYPE html>
 <html>
+	<link href="./css/site.css" rel="stylesheet" type="text/css">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<basefont color="red" size="5" face="liberation" />
 	</head>
-	<body bgcolor="#FADADA" text="#880088" link="#EE0000" vlink="#880088">eventos</body>
-</html>
+	<body >
+		<header>
+			<img class="imgLogo" src="./img/PontaLogo.png">
+		</header>
+		<section>
+			<table class="tabCursos">
+				<tr>
+					<th colspan=2 class="tabTitulo">Festivais</th>
+				</tr>
+				<tr>
+					<th class="tabSubTit">Inverno</th>
+					<th class="tabSubTit">Verão</th>
+				</tr>
+
+				<tr>
+					<td>
+						<ul class="festival">
+							<li>Tema livre</li>
+							<li>R$ 60 por dança</li>
+							<li>1ª semana de Julho</li>
+						</ul>
+					</td>
+					<td>
+						<ul class="festival">
+							<li>Tema livre</li>
+							<li>R$ 60 por dança</li>
+							<li>1ª semana de Julho</li>
+						</ul>
+					</td>					
+				</tr>
+
+			</table>
+		<div class="reserva">
+			<form>
+				<fieldset>
+					<legend>Reserva de Vaga em Evento</legend>
+						<label for="matricula">Matrícula:</label>
+	  					<input type="text" name="matricula" required/>
+  					<select name="eventos">
+  						<option>---</option>
+  						<option>Festival de Inverno</option>
+  						<option>Festival de Verão</option>
+  					</select>
+  					<label for="eventos" class="right">Eventos:</label>
+  					<br/>
+					<label for="dancas">Danças:</label>
+					<input type="checkbox" name="chk_ballet">Ballet</input>
+					<input type="checkbox" name="chk_jazz">Jazz</input>
+					<input type="checkbox" name="chk_sapateadot">Sapateado</input>
+					<br/>
+					<label for="convites">Convites:</label>
+					<input type="text" name="convites" required/>
+					<br/>
+					<hr>
+					<label for="valor">Valor:</label>
+					<input type="text" name="valor" readonly/>
+					<br/>		
+					<input type="reset" name="limpar" value="Limpar">
+					<input type="submit" name="enviar" value="Enviar">
+				</fieldset>
+			</form>
+		</div>		
+		</section>		
+		<nav>
+			<ul class="menu">
+				<li><a href="./academia.html" target="_blank">Academia</a></li>
+				<li><a href="./turmas.html" target="_blank">Turmas</a></li>
+				<li><a href="./cursos.html" target="_blank">Cursos</a></li>
+				<li><a href="./eventos.html" target="_blank">Eventos</a></li>
+				<li><a href="./matricula.html" target="_blank">Matrícula</a></li>
+			</ul>
+		</nav>
+		<footer class="ender">
+			<div>Av. Fred Ataire 234</div>
+			<div>Tel: (21) 1234-5678</div>
+			<div><a href="mailto:contato@pontadope.com.br" target="_top">contato@pontadope.com.br/div>
+		</footer>			
+	</body>
+<html>

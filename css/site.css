@@ -45,3 +45,20 @@ li.toppad {padding-top: 15px;}
 .texto.sapateado:after {
 	content: "apateado é uma arte visual e sonora. É um misto de ritmo, som, técnica, movimento e estilo. É uma dança alegre que libera o prazer de seus praticantes e faz os pés cantarem. Este estilo de dança desenvolve a percepção musical e melhora a coordenação motora.";
 }
+.reserva fieldset {background-color: #FFFFFF; width: 560px; margin-left: auto; margin-right: auto;}
+.reserva label {display: block; width: 90px; float: left; margin-top: 10px;}
+.reserva label[for="eventos"] {width: 60px;}
+.reserva label.right {float: right;}
+.reserva select {float: right;}
+.reserva input[type="reset"], input[type="submit"] {float: right;}
+.reserva input[type="text"][name="matricula"] {width: 120px;}
+.reserva input[type="text"][name="valor"] {margin-top: 15px;}
+.reserva input[type="text"] {width: 60px;}
+
+.reserva label[for="valor"] {margin-top: 10px;}
+
+.reserva input { margin-top: 15px;}
+.reserva select { margin-top: 15px;}
+.reserva {margin-bottom: 20px;}
+
+ul.festival {list-style-type: circle;}
