@@ -1,6 +1,101 @@
+<!DOCTYPE html>
 <html>
+	<link href="./css/site.css" rel="stylesheet" type="text/css">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<basefont color="red" size="5" face="liberation" />
 	</head>
-	<body bgcolor="#FADADA" text="#880088" link="#EE0000" vlink="#880088">matricula</body>
-</html>
+	<body >
+		<header>
+			<img class="imgLogo" src="./img/PontaLogo.png">
+		</header>
+		<section>
+			<div>
+				<form>
+					<div>
+						<fieldset>
+							<legend>Dados do Aluno</legend>
+							<div>
+								<label for="nome">Nome:</label>
+								<input type="text" name="nome"/>
+							</div>
+							<div>
+								<div>
+									<div>
+										<label for="nome">Telefone:</label>
+										<input type="text" name="telefone"/>
+									</div>
+									<div>
+										<label for="nome">Celular:</label>
+										<input type="text" name="celular"/>
+									</div>								
+								</div>
+								<div>
+									<fieldset>
+										<legend>Sexo</legend>
+										<input type="radio" name="sexo" value="masc">Masculino</input>
+										<input type="radio" name="sexo" value="fem">Feminino</input>
+									</fieldset>
+								</div>
+							<div>
+							<div>
+								<label for="curso">Cursos:</label>
+								<input type="checkbox" name="curso" value="ballet">Ballet</input>
+								<input type="checkbox" name="curso" value="jazz">Jazz</input>
+								<input type="checkbox" name="curso" value="sapateado">Sapateado</input>								
+							</div>
+							<div>
+								<label >Nascimento:</label>
+								<input type="text" name="dia"/>
+								<span>/</span>
+								<input type="text" name="mes"/>
+								<span>/</span>
+								<input type="text" name="ano"/>
+							</div>
+							<div>
+								<label for="turma">Turma:</label>
+								<input type="text" name="turma"/>								
+							</div>
+						</fieldset>
+					</div>
+					<div>
+						<fieldset>
+							<legend>Dados do Aluno</legend>
+							<div>
+								<div>
+									<label for="cpf">Cpf:</label>
+									<input type="text" name="cpf"/>								
+								</div>	
+								<div>
+									<input type="checkbox" name="proprio" value="proprio">Próprio Aluno</input>
+								</div>							
+							</div>
+							<div>
+								<label for="nomeresponsavel">Nome:</label>
+								<input type="text" name="nomeresponsavel"/>									
+							</div>
+						</fieldset>
+					</div>
+					<div>
+						<input type="submit" value="Enviar"/>
+						<input type="reset" value="Limpar"/>
+					</div>
+				</form>
+			</div>
+		</section>		
+		<nav>
+			<ul class="menu">
+				<li><a href="./academia.html" target="_blank">Academia</a></li>
+				<li><a href="./turmas.html" target="_blank">Turmas</a></li>
+				<li><a href="./cursos.html" target="_blank">Cursos</a></li>
+				<li><a href="./eventos.html" target="_blank">Eventos</a></li>
+				<li><a href="./matricula.html" target="_blank">Matrícula</a></li>
+			</ul>
+		</nav>
+		<footer class="ender">
+			<div>Av. Fred Ataire 234</div>
+			<div>Tel: (21) 1234-5678</div>
+			<div><a href="mailto:contato@pontadope.com.br" target="_top">contato@pontadope.com.br/div>
+		</footer>			
+	</body>
+<html>
