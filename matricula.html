@@ -10,73 +10,74 @@
 			<img class="imgLogo" src="./img/PontaLogo.png">
 		</header>
 		<section>
-			<div>
+			<div class="matricula">
 				<form>
 					<div>
 						<fieldset>
 							<legend>Dados do Aluno</legend>
-							<div>
+							<div class="linha">
 								<label for="nome">Nome:</label>
-								<input type="text" name="nome"/>
+								<input class="maior" type="text" name="nome"/>
 							</div>
-							<div>
-								<div>
+							<div class="linha2">
+								<div class="child">
 									<div>
-										<label for="nome">Telefone:</label>
-										<input type="text" name="telefone"/>
+										<label for="telefone">Telefone:</label>
+										<input class="medio" type="text" name="telefone"/>
 									</div>
-									<div>
-										<label for="nome">Celular:</label>
-										<input type="text" name="celular"/>
+									<div class="linha">
+										<label for="celular">Celular:</label>
+										<input class="medio" type="text" name="celular"/>
 									</div>								
 								</div>
-								<div>
-									<fieldset>
+								<div class="child">
+									<fieldset class="sexo">
 										<legend>Sexo</legend>
-										<input type="radio" name="sexo" value="masc">Masculino</input>
+										<input type="radio" name="sexo" value="masc">Masculino</input><br>
 										<input type="radio" name="sexo" value="fem">Feminino</input>
 									</fieldset>
 								</div>
-							<div>
-							<div>
+							</div>							
+							<div class="linha">
 								<label for="curso">Cursos:</label>
 								<input type="checkbox" name="curso" value="ballet">Ballet</input>
 								<input type="checkbox" name="curso" value="jazz">Jazz</input>
 								<input type="checkbox" name="curso" value="sapateado">Sapateado</input>								
 							</div>
-							<div>
+							<div class="linha">
 								<label >Nascimento:</label>
-								<input type="text" name="dia"/>
+								<input class="menor" type="text" name="dia"/>
 								<span>/</span>
-								<input type="text" name="mes"/>
+								<input class="menor" type="text" name="mes"/>
 								<span>/</span>
-								<input type="text" name="ano"/>
+								<input class="pequeno" type="text" name="ano"/>
 							</div>
-							<div>
+							<div class="linha">
 								<label for="turma">Turma:</label>
-								<input type="text" name="turma"/>								
+								<input class="maior" type="text" name="turma"/>								
 							</div>
 						</fieldset>
 					</div>
 					<div>
 						<fieldset>
-							<legend>Dados do Aluno</legend>
-							<div>
-								<div>
+							<legend>Responsável Financeiro</legend>
+							<div class="linha2">
+								<div class="left">
 									<label for="cpf">Cpf:</label>
-									<input type="text" name="cpf"/>								
+									<input class="medio" type="text" name="cpf"/>								
 								</div>	
-								<div>
+								<div class="right">
 									<input type="checkbox" name="proprio" value="proprio">Próprio Aluno</input>
-								</div>							
+								</div>
+								<div style="clear: both;"></div>						
 							</div>
-							<div>
+							<div class="linha">
 								<label for="nomeresponsavel">Nome:</label>
-								<input type="text" name="nomeresponsavel"/>									
+								<input class="maior" type="text" name="nomeresponsavel"/>
 							</div>
 						</fieldset>
 					</div>
-					<div>
+					<div class="right">
 						<input type="submit" value="Enviar"/>
 						<input type="reset" value="Limpar"/>
 					</div>
