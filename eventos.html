@@ -5,10 +5,21 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
 	</head>
-	<body >
-		<header>
-			<img class="imgLogo" src="./img/PontaLogo.png">
-		</header>
+	<body id="eventos">
+		<nav>
+			<header>
+				<img class="imgLogo" src="./img/PontaLogo.png">
+			</header>
+			<nav>
+				<ul class="menu">
+					<li><a href="./academia.html" target="_blank">Academia</a></li>
+					<li><a href="./turmas.html" target="_blank">Turmas</a></li>
+					<li><a href="./cursos.html" target="_blank">Cursos</a></li>
+					<li><a href="./eventos.html" target="_blank">Eventos</a></li>
+					<li><a href="./matricula.html" target="_blank">Matrícula</a></li>
+				</ul>
+			</nav>		
+		</nav>
 		<section>
 			<table class="tabCursos">
 				<tr>
@@ -37,46 +48,37 @@
 				</tr>
 
 			</table>
-		<div class="reserva">
-			<form>
-				<fieldset>
-					<legend>Reserva de Vaga em Evento</legend>
-						<label for="matricula">Matrícula:</label>
-	  					<input type="text" name="matricula" required/>
-  					<select name="eventos">
-  						<option>---</option>
-  						<option>Festival de Inverno</option>
-  						<option>Festival de Verão</option>
-  					</select>
-  					<label for="eventos" class="right">Eventos:</label>
-  					<br/>
-					<label for="dancas">Danças:</label>
-					<input type="checkbox" name="chk_ballet">Ballet</input>
-					<input type="checkbox" name="chk_jazz">Jazz</input>
-					<input type="checkbox" name="chk_sapateadot">Sapateado</input>
-					<br/>
-					<label for="convites">Convites:</label>
-					<input type="text" name="convites" required/>
-					<br/>
-					<hr>
-					<label for="valor">Valor:</label>
-					<input type="text" name="valor" readonly/>
-					<br/>		
-					<input type="reset" name="limpar" value="Limpar">
-					<input type="submit" name="enviar" value="Enviar">
-				</fieldset>
-			</form>
-		</div>		
+			<div class="reserva">
+				<form>
+					<fieldset>
+						<legend>Reserva de Vaga em Evento</legend>
+							<label for="matricula">Matrícula:</label>
+		  					<input type="text" name="matricula" required/>
+	  					<select name="eventos">
+	  						<option>---</option>
+	  						<option>Festival de Inverno</option>
+	  						<option>Festival de Verão</option>
+	  					</select>
+	  					<label for="eventos" class="right">Eventos:</label>
+	  					<br/>
+						<label for="dancas">Danças:</label>
+						<input type="checkbox" name="chk_ballet">Ballet</input>
+						<input type="checkbox" name="chk_jazz">Jazz</input>
+						<input type="checkbox" name="chk_sapateadot">Sapateado</input>
+						<br/>
+						<label for="convites">Convites:</label>
+						<input type="text" name="convites" required/>
+						<br/>
+						<hr>
+						<label for="valor">Valor:</label>
+						<input type="text" name="valor" readonly/>
+						<br/>		
+						<input type="reset" name="limpar" value="Limpar">
+						<input type="submit" name="enviar" value="Enviar">
+					</fieldset>
+				</form>
+			</div>		
 		</section>		
-		<nav>
-			<ul class="menu">
-				<li><a href="./academia.html" target="_blank">Academia</a></li>
-				<li><a href="./turmas.html" target="_blank">Turmas</a></li>
-				<li><a href="./cursos.html" target="_blank">Cursos</a></li>
-				<li><a href="./eventos.html" target="_blank">Eventos</a></li>
-				<li><a href="./matricula.html" target="_blank">Matrícula</a></li>
-			</ul>
-		</nav>
 		<footer class="ender">
 			<div>Av. Fred Ataire 234</div>
 			<div>Tel: (21) 1234-5678</div>

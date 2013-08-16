@@ -1,7 +1,10 @@
-header	{ display:block; margin-bottom: 15px; float:left;		}
+header	{ display:block; margin-bottom: 15px; float: left}
 nav		{ display:block; width: 240px; float: left;	}
 section	{ display:block; float: right;				}
 footer	{ clear: both;								}
+#index, #turmas {width: 600px;}
+#matricula {width: 720px;}
+#cursos,#eventos {width: 860px;}
 body    { background-color: #FADADA; color: #880088; font-size: 16px; font-family: Verdana, "Liberation";}
 a:link {color: #EE0000;}
 a:visited {color: #880088;}
