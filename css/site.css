@@ -51,7 +51,7 @@ li.toppad {padding-top: 15px;}
 .reserva fieldset {background-color: #FFFFFF; width: 560px; margin-left: auto; margin-right: auto;}
 .reserva label {display: block; width: 90px; float: left; margin-top: 10px;}
 .reserva label[for="eventos"] {width: 60px;}
-.reserva label.right {float: right;}
+.reserva label.right {float: right; display: inline-table;}
 .reserva select {float: right;}
 .reserva input[type="reset"], .reserva input[type="submit"] {float: right;}
 .reserva input[type="text"][name="matricula"] {width: 120px;}
