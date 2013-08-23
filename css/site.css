@@ -71,6 +71,7 @@ li.toppad {padding-top: 15px;}
 .matricula input.pequeno {width:44px;}
 .matricula input.menor {width:22px;}
 .matricula label.direita {width:22px;}
+
 .matricula label {display: block; float: left;width: 80px}
 .matricula div.linha2 { 
 	width: 380px;
@@ -80,7 +81,7 @@ li.toppad {padding-top: 15px;}
 .child {
 	display: table-cell; vertical-align: middle; width: auto; position: static;
 }
-
+.matricula div.linha label { display: inline-table;}
 .matricula div.linha { margin-top: 10px;}
 .matricula input[type="radio"] {vertical-align: baseline;}
 .matricula input {}
