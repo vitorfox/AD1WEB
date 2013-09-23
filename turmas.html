@@ -1,4 +1,36 @@
 <!DOCTYPE html>
+
+<script TYPE="text/javascript">
+var a0 = {'idade':'6 a 10 anos','danca':['Ballet']};
+var a1 = {'idade':'11 a 19 anos','danca':['Ballet', 'Jazz', 'Sapateado']};
+var a2 = {'idade':'Acima de 20 anos','danca':['Ballet', 'Jazz']};
+
+var a = [a0,a1,a2];
+
+function MostraTurmas(index) {
+	console.log(a[index]);
+	mudaTexto('idade',index);
+	mudaLista('danca',index);
+};
+
+function mudaConteudo(id,valor) {
+	document.getElementById(id).innerHTML = valor;
+}
+
+function mudaTexto(chave,index) {
+	mudaConteudo(chave,a[index][chave]);
+};
+
+function mudaLista(chave,index) {
+	html = '<ul';
+	for (var i = 0; i < a[index][chave].length; i++) {
+		html = html + "<li>"+a[index][chave][i]+"</li>";
+	};
+	html = html + "</ul>";
+	mudaConteudo(chave,html);
+}
+
+</script>
 <html>
 	<link href="./css/site.css" rel="stylesheet" type="text/css">
 	<head>
@@ -21,28 +53,47 @@
 			</nav>	
 		</nav>	
 		<section>
-			<div class="quadro">
-				<ol>
-					<li>Infantil</li>
-					<ul>
-						<li class="faixaetaria">6 a 10 anos</li>
-						<li class="cursos">Ballet</li>
-					</ul>
-					<li class="toppad">Juvenil</li>
-					<ul>
-						<li class="faixaetaria">11 a 19 anos</li>
-						<li class="cursos">Ballet</li>
-						<li class="cursos">Jazz</li>
-						<li class="cursos">Sapateado</li>
-					</ul>					
-					<li class="toppad">Adulto</li>
-					<ul>
-						<li class="faixaetaria">Acima de 20 anos</li>
-						<li class="cursos">Ballet</li>
-						<li class="cursos">Jazz</li>
-					</ul>						
-				</ol>
-			</div>
+			<table class="menuBotao">
+				<tr>
+					<th>
+						<table class="tabBotao">
+							<tr>
+								<td>
+									<a target="_self" href="javascript:MostraTurmas(0);">Infantil</a>
+							    </td>
+							</tr>
+						</table>
+					</th>
+					<th>
+						<table class="tabBotao">
+							<tr>
+								<td>
+									<a target="_self" href="javascript:MostraTurmas(1);">Juvenil</a>
+								</td>
+							</tr>
+						</table>
+					</th>
+					<th>
+						<table class="tabBotao">
+							<tr>
+								<td>
+									<a target="_self" href="javascript:MostraTurmas(2);">Adulto</a>
+								</td>
+							</tr>
+						</table>
+					</th>
+				</tr>
+			</table>
+			<table class="tabInfo">
+				<tr>
+					<td class="tabColInfo">Faixa Etária</td>
+					<td id="idade"></td>
+				</tr>
+				<tr>
+					<td class="tabColInfo">Danças</td>
+				    <td id="danca"></td>
+				</tr>
+			</table>
 		</section>		
 		<footer class="ender">
 			<div>Av. Fred Ataire 234</div>

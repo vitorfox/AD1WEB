@@ -2,8 +2,8 @@ header	{ display:block; margin-bottom: 15px; float: left}
 nav		{ display:block; width: 240px; float: left;	}
 section	{ display:block; float: right;				}
 footer	{ clear: both;								}
-#index, #turmas {width: 600px;}
-#matricula {width: 720px;}
+#index {width: 600px;}
+#matricula, #turmas {width: 720px;}
 #cursos,#eventos {width: 860px;}
 body    { background-color: #FADADA; color: #880088; font-size: 16px; font-family: Verdana, "Liberation";}
 a:link {color: #EE0000;}
@@ -90,3 +90,41 @@ li.toppad {padding-top: 15px;}
 .right {float: right;}
 
 ul.festival {list-style-type: circle;}
+
+.menuBotao {
+    width:  400px;
+    padding: 8px;
+    border-spacing: 8px;
+}
+.tabBotao {
+    width: 100%;
+    border: 8px outset;
+    padding: 6px;
+    border-color: #B000B0;
+    border-collapse: separate;
+}
+.tabInfo {
+    width:  400px;
+    border-spacing: 6px;
+}
+.tabColInfo {
+    width: 110px;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #FEBEBE;
+    vertical-align: top;
+}
+#idade {
+    padding: 10px;
+    font-weight: bold;
+    background-color: #FEBEBE;
+}
+#danca {
+    height: 90px;
+    padding: 10px;
+    font-weight: bold;
+    vertical-align: top;
+    background-color: #FEBEBE;
+}
+
+#danca ul {list-style-type: circle;}
