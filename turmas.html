@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 
-<script TYPE="text/javascript">
-var a0 = {'idade':'6 a 10 anos','danca':['Ballet']};
-var a1 = {'idade':'11 a 19 anos','danca':['Ballet', 'Jazz', 'Sapateado']};
-var a2 = {'idade':'Acima de 20 anos','danca':['Ballet', 'Jazz']};
-
-var a = [a0,a1,a2];
-
-function MostraTurmas(index) {
-	console.log(a[index]);
-	mudaTexto('idade',index);
-	mudaLista('danca',index);
-};
-
-function mudaConteudo(id,valor) {
-	document.getElementById(id).innerHTML = valor;
-}
-
-function mudaTexto(chave,index) {
-	mudaConteudo(chave,a[index][chave]);
-};
-
-function mudaLista(chave,index) {
-	html = '<ul';
-	for (var i = 0; i < a[index][chave].length; i++) {
-		html = html + "<li>"+a[index][chave][i]+"</li>";
-	};
-	html = html + "</ul>";
-	mudaConteudo(chave,html);
-}
-
-</script>
 <html>
 	<link href="./css/site.css" rel="stylesheet" type="text/css">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
+		<script TYPE="text/javascript">
+		var a0 = {'idade':'6 a 10 anos','danca':['Ballet']};
+		var a1 = {'idade':'11 a 19 anos','danca':['Ballet', 'Jazz', 'Sapateado']};
+		var a2 = {'idade':'Acima de 20 anos','danca':['Ballet', 'Jazz']};
+
+		var a = [a0,a1,a2];
+
+		function MostraTurmas(index) {
+			console.log(a[index]);
+			mudaTexto('idade',index);
+			mudaLista('danca',index);
+		};
+
+		function mudaConteudo(id,valor) {
+			document.getElementById(id).innerHTML = valor;
+		}
+
+		function mudaTexto(chave,index) {
+			mudaConteudo(chave,a[index][chave]);
+		};
+
+		function mudaLista(chave,index) {
+			html = '<ul>';
+			for (var i = 0; i < a[index][chave].length; i++) {
+				html = html + "<li>"+a[index][chave][i]+"</li>";
+			};
+			html = html + "</ul>";
+			mudaConteudo(chave,html);
+		}
+
+		</script>		
 	</head>
 	<body id="turmas">
 		<nav>

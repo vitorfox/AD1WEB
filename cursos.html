@@ -1,9 +1,25 @@
 <!DOCTYPE html>
+
 <html>
 	<link href="./css/site.css" rel="stylesheet" type="text/css">
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
+		<script type="text/javascript">
+		function MostraCursos(index) {
+			myWindow=window.open('','','width=200,height=100');
+			var html = '';
+			html += '<link href="./css/site.css" rel="stylesheet" type="text/css">'
+			html += '<table class="tabDanca">';
+			html +=	'	<th>Cursos</th>'
+			html +=	'	<tr><td>Conteudo do texto qualquer</td></tr>'				
+			html += '</table>';	
+			html += '<input type="button" value="Fechar" onclick="self.close()">';		
+			myWindow.document.write(html);
+			myWindow.focus();
+		}
+		</script>
+
 	</head>
 	<body id="cursos">
 		<nav>
@@ -21,35 +37,11 @@
 			</nav>
 		</nav>
 		<section>
-			<table class="tabCursos">
-				<tr>
-					<th colspan=3 class="tabTitulo">Cursos</th>
-				</tr>
-				<tr>
-					<td rowspan=2 class="tabImg"><img src="./img/ballet.png"></img</td>		
-					<th colspan=2 class="tabSubTit">Ballet Clássico</th>
-				</tr>
-				<tr>
-					<td colspan=2><div class="texto ballet"></div></td>
-				</tr>
-
-				<tr>
-					<th colspan=2 class="tabSubTit">Jazz</th>	
-					<td rowspan=2 class="tabImg"><img src="./img/jazz.png"></img</td>																			
-				</tr>
-				<tr>
-					<td colspan=2 ><div class="texto jazz"></div></td>
-				</tr>
-
-				<tr>
-					<td rowspan=2 class="tabImg"><img src="./img/sapateado.png"></img</td>		
-					<th colspan=2 class="tabSubTit">Sapateado</th>
-				</tr>
-				<tr>
-					<td colspan=2><div class="texto sapateado"></div></td>
-				</tr>
-
-			</table>
+			<form>
+				<input type="image" onClick="MostraCursos(0);" class="imgBotao" src="img/ballet.png" />
+				<input type="image" onClick="MostraCursos(1);" class="imgBotao" src="img/jazz.png" />
+				<input type="image" onClick="MostraCursos(2);" class="imgBotao" src="img/sapateado.png" />
+			</form>
 		</section>		
 		<footer class="ender">
 			<div>Av. Fred Ataire 234</div>

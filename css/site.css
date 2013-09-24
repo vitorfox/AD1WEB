@@ -128,3 +128,24 @@ ul.festival {list-style-type: circle;}
 }
 
 #danca ul {list-style-type: circle;}
+
+table.tabDanca {
+    width: 98%;
+    border: 1px solid;
+    margin-bottom: 10px;
+    border-collapse: separate;
+}
+table.tabDanca td, table.tabDanca th {
+    padding: 10px;
+    border: 1px solid;
+}
+table.tabDanca td {
+    text-align:justify;
+    background-color: #FFFFFF;
+}
+.imgBotao {
+    border: 8px outset;
+    padding: 6px;
+    border-color: #B000B0;
+    border-collapse: separate;
+}
