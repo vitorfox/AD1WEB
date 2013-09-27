@@ -6,16 +6,17 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
 		<script type="text/javascript">
+
+		var nome_curso;
 		function MostraCursos(index) {
-			myWindow=window.open('','','width=200,height=100');
-			var html = '';
-			html += '<link href="./css/site.css" rel="stylesheet" type="text/css">'
-			html += '<table class="tabDanca">';
-			html +=	'	<th>Cursos</th>'
-			html +=	'	<tr><td>Conteudo do texto qualquer</td></tr>'				
-			html += '</table>';	
-			html += '<input type="button" value="Fechar" onclick="self.close()">';		
-			myWindow.document.write(html);
+			myWindow=window.open('helper/curso_popup.html','','width=200,height=100');
+			//var html = '';		
+			//myWindow.document.write(html);
+			//alert (myWindow.document.getElementById('nome_curso'));
+			window.nome_curso = myWindow.document.getElementById('nome_curso');
+			//descricao_curso = myWindow.document.getElementById('descricao_curso');
+			//nome_curso.content = "Teste";
+			//descricao_curso = "Teste mais ainda";
 			myWindow.focus();
 		}
 		</script>
