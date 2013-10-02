@@ -4,6 +4,26 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
+		<script type="text/javascript">
+
+		var nome;
+		var descricao;
+
+		function mudaNomeCurso(nome) {
+			var elemento = document.getElementById('nome_curso').innerHTML = nome;
+		}
+
+		function mudaDescricaoCurso(descricao) {
+			var elemento = document.getElementById('descricao_curso').innerHTML = descricao;
+		}
+
+		window.onload = function()
+		{
+			mudaNomeCurso(nome);
+			mudaDescricaoCurso(descricao);
+		};
+
+		</script>
 	</head>
 	<body>
 		<nav>
@@ -13,7 +33,9 @@
 					<td id="descricao_curso">Conteudo do texto qualquer</td>
 				</tr>
 			</table>
-			<input type="button" value="Fechar" onclick="self.close()">
+			<form>
+				<input type="button" value="Fechar" onclick="self.close()">
+			</form>
 		</nav>		
 	</body>
 <html>

@@ -5,22 +5,27 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
-		<script type="text/javascript">
+	<script type="text/javascript">
 
-		var nome_curso;
-		function MostraCursos(index) {
-			myWindow=window.open('helper/curso_popup.html','','width=200,height=100');
-			//var html = '';		
-			//myWindow.document.write(html);
-			//alert (myWindow.document.getElementById('nome_curso'));
-			window.nome_curso = myWindow.document.getElementById('nome_curso');
-			//descricao_curso = myWindow.document.getElementById('descricao_curso');
-			//nome_curso.content = "Teste";
-			//descricao_curso = "Teste mais ainda";
-			myWindow.focus();
+		var myWindow = null;
+
+		function MostraCursos (index) {
+			openNewWindow(index);			
 		}
-		</script>
 
+		function openNewWindow (index) {
+			if(myWindow == null || myWindow.closed) {
+				myWindow= window.open('helper/curso_popup.html','myWindow');
+				myWindow.nome = "curso " + index;
+				myWindow.descricao = "desc " + index;
+			} else {
+				myWindow.mudaNomeCurso("curso " + index);
+				myWindow.mudaDescricaoCurso("desc " + index);				
+			}
+			myWindow.focus();
+
+		}
+	</script>
 	</head>
 	<body id="cursos">
 		<nav>
@@ -39,9 +44,9 @@
 		</nav>
 		<section>
 			<form>
-				<input type="image" onClick="MostraCursos(0);" class="imgBotao" src="img/ballet.png" />
-				<input type="image" onClick="MostraCursos(1);" class="imgBotao" src="img/jazz.png" />
-				<input type="image" onClick="MostraCursos(2);" class="imgBotao" src="img/sapateado.png" />
+				<input type="image" onClick="MostraCursos(0); return false;" class="imgBotao" src="img/ballet.png" />
+				<input type="image" onClick="MostraCursos(1); return false;" class="imgBotao" src="img/jazz.png" />
+				<input type="image" onClick="MostraCursos(2); return false;" class="imgBotao" src="img/sapateado.png" />
 			</form>
 		</section>		
 		<footer class="ender">
@@ -49,5 +54,6 @@
 			<div>Tel: (21) 1234-5678</div>
 			<div><a href="mailto:contato@pontadope.com.br" target="_top">contato@pontadope.com.br/div>
 		</footer>			
-	</body>
+	</body>	
 <html>
+
