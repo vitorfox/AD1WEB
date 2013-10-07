@@ -5,27 +5,27 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
-	<script type="text/javascript">
+		<script type="text/javascript">
 
-		var myWindow = null;
+			var myWindow = null;
 
-		function MostraCursos (index) {
-			openNewWindow(index);			
-		}
-
-		function openNewWindow (index) {
-			if(myWindow == null || myWindow.closed) {
-				myWindow= window.open('helper/curso_popup.html','myWindow');
-				myWindow.nome = "curso " + index;
-				myWindow.descricao = "desc " + index;
-			} else {
-				myWindow.mudaNomeCurso("curso " + index);
-				myWindow.mudaDescricaoCurso("desc " + index);				
+			function MostraCursos (index) {
+				openNewWindow(index);			
 			}
-			myWindow.focus();
 
-		}
-	</script>
+			function openNewWindow (index) {
+				if(myWindow == null || myWindow.closed) {
+					myWindow= window.open('helper/curso_popup.html','myWindow');
+					myWindow.nome = "curso " + index;
+					myWindow.descricao = "desc " + index;
+				} else {
+					myWindow.mudaNomeCurso("curso " + index);
+					myWindow.mudaDescricaoCurso("desc " + index);				
+				}
+				myWindow.focus();
+
+			}
+		</script>
 	</head>
 	<body id="cursos">
 		<nav>

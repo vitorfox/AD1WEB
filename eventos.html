@@ -4,6 +4,34 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<basefont color="red" size="5" face="liberation" />
+		<script type="text/javascript">
+
+			function Calc () {
+				checkEvento();
+				checkDanca();
+			}	
+
+			function checkEvento () {
+				if(document.getElementById("eventos_select").value < 1) {
+					alert("Nenhum festival selecionado!");
+				}					
+			}		
+
+			function checkDanca() {
+				var inputs = document.getElementsByTagName("input");
+				var dancaSelected = false;
+				for(var i = 0; i < inputs.length; i++) {
+				    if(inputs[i].name.indexOf('chk_') == 0) {
+				    	if (inputs[i].checked) {
+				    		dancaSelected = true;
+				    	}
+				    }
+				}
+				if (!dancaSelected) {
+					alert("Nenhuma dança selecionada!");
+				}
+			}
+		</script>
 	</head>
 	<body id="eventos">
 		<nav>
@@ -54,17 +82,17 @@
 						<legend>Reserva de Vaga em Evento</legend>
 							<label for="matricula">Matrícula:</label>
 		  					<input type="text" name="matricula" required/>
-	  					<select name="eventos">
-	  						<option>---</option>
-	  						<option>Festival de Inverno</option>
-	  						<option>Festival de Verão</option>
+	  					<select name="eventos" id="eventos_select">
+	  						<option selected="selected" value="0">---</option>
+	  						<option value="1">Festival de Inverno</option>
+	  						<option value="2">Festival de Verão</option>
 	  					</select>
 	  					<label for="eventos" class="right">Eventos:</label>
 	  					<br/>
 						<label for="dancas">Danças:</label>
-						<input type="checkbox" name="chk_ballet">Ballet</input>
-						<input type="checkbox" name="chk_jazz">Jazz</input>
-						<input type="checkbox" name="chk_sapateadot">Sapateado</input>
+						<input type="checkbox" name="chk_ballet" value="ballet">Ballet</input>
+						<input type="checkbox" name="chk_jazz" value="jazz">Jazz</input>
+						<input type="checkbox" name="chk_sapateado" value="sapateado">Sapateado</input>
 						<br/>
 						<label for="convites">Convites:</label>
 						<input type="text" name="convites" required/>
@@ -72,6 +100,7 @@
 						<hr>
 						<label for="valor">Valor:</label>
 						<input type="text" name="valor" readonly/>
+						<input onClick="Calc();" type="button" name="calc" value="Calcular" class="right">
 						<br/>		
 						<input type="reset" name="limpar" value="Limpar">
 						<input type="submit" name="enviar" value="Enviar">
